@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavilion Nashville - Upcoming Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            max-width: 250px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .event {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .event:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .event-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .event-icon {
+            font-size: 24px;
+        }
+        
+        .event-date {
+            font-size: 14px;
+            color: #E91E63;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .event-description {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 99, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn-placeholder {
+            background: #e0e0e0;
+            color: #666;
+            cursor: not-allowed;
+        }
+        
+        .btn-placeholder:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .coming-soon {
+            display: inline-block;
+            background: #FFF3E0;
+            color: #E65100;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+        
+        .footer {
+            background: #f9f9f9;
+            padding: 20px 30px;
+            text-align: center;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .footer p {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+        
+        .footer a {
+            color: #E91E63;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .event-title {
+                font-size: 18px;
+            }
+            
+            .logo {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23E91E63;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23C2185B;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 150 100 L 250 250 L 150 350 L 100 300 L 150 200 L 80 150 Z' fill='url(%23grad)'/%3E%3Ctext x='380' y='280' font-size='180' font-weight='700' font-family='Arial, sans-serif' fill='black'%3EPavilion%3C/text%3E%3C/svg%3E" alt="Pavilion" class="logo">
+            <h1>Upcoming Events</h1>
+            <p>Nashville Chapter</p>
+        </div>
+        
+        <div class="content">
+            <!-- Event 1 -->
+            <div class="event">
+                <div class="event-title">
+                    <span class="event-icon">☕</span>
+                    Member Meetup: Service Social
+                </div>
+                <div class="event-date">
+                    📅 July 9, 2024 @ 8:00 AM
+                </div>
+                <div class="event-description">
+                    Join us for our monthly member meetup and service social. Connect with fellow entrepreneurs, share ideas, and build meaningful relationships.
+                </div>
+                <a href="https://community.joinpavilion.com/networks/events/272919" class="btn">Register Now →</a>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="event">
+                <div class="event-title">
+                    <span class="event-icon">🍽️</span>
+                    Salon Dinner #2
+                </div>
+                <div class="event-date">
+                    📅 August 2024 (TBD)
+                    <span class="coming-soon">Details Coming</span>
+                </div>
+                <div class="event-description">
+                    An intimate dinner experience for Pavilion members. Network with like-minded entrepreneurs in a relaxed, curated setting.
+                </div>
+                <button class="btn btn-placeholder">Registration Opening Soon</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Questions? Reach out to the Pavilion Nashville team</p>
+            <p><a href="https://joinpavilion.com">Visit Pavilion →</a></p>
+        </div>
+    </div>
+</body>
+</html>
